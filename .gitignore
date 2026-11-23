@@ -1,0 +1,8 @@
+/build
+/dist
+/INFO_AFTER.txt
+/INFO_BEFORE.txt
+/LICENSE.txt
+/Make-Your-Own-Dollmaker.code-workspace
+/node_modules
+/release_stage
