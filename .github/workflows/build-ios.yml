@@ -1,4 +1,4 @@
-﻿name: Build iOS Dollmaker
+name: Build iOS Dollmaker
 
 on:
   workflow_dispatch:
