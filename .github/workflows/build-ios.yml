@@ -13,7 +13,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: "22"
 
       - name: Install Node dependencies & sync iOS
         run: |
@@ -23,7 +23,7 @@ jobs:
       - name: Build iOS target (unsigned verification)
         run: |
           xcodebuild \
-            -workspace ios/App/App.xcworkspace \
+            -project ios/App/App.xcodeproj \
             -scheme App \
             -configuration Release \
             -sdk iphoneos \
@@ -35,4 +35,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: pocket-y2k-dollmaker-ios
-          path: build/ios/Build/Products/Release-iphoneos/
+          path: build/ios
